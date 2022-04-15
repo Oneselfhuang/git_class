@@ -19,6 +19,16 @@ testcase()  用例相关链接@allure.testcase()
 issue()      缺陷地址   @allure.issue()
 attachment()    附件
 
+测试数据
+pytest --alluredir=./result
+
+方式一：查看报告
+allure serve ./result
+方式二：
+生产报告
+allure generate ./result -o ./report/ --clean
+查看报告
+allure open -h 127.0.0.1 -p 8883 ./report/
 """
 
 
